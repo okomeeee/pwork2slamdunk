@@ -3,6 +3,23 @@
     text-align: center;
 }
 
+.list-item{
+    $col3width: 100%/3;
+    width: $col3width; 
+}
+
 .item-inner{
-    
+    border: solid 1px black;  
+        img{
+           width: 100%; 
+           border: solid 1px black;
+        }
+}
+
+.news-list{
+    display: flex;
+}
+
+.kv{
+    text-align: center;
 }
