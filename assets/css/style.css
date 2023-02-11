@@ -5,4 +5,24 @@
 .u-txt-ttl2 {
   font-size: 50px;
   text-align: center;
+}
+
+.list-item {
+  width: 33.3333333333%;
+}
+
+.item-inner {
+  border: solid 1px black;
+}
+.item-inner img {
+  width: 100%;
+  border: solid 1px black;
+}
+
+.news-list {
+  display: flex;
+}
+
+.kv {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
