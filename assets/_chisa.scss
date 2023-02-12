@@ -1,4 +1,83 @@
-// ヘッダー
+*{
+    padding: 0;
+    margin: 0;
+};
+
 #header{
-    background-color: yellow;
-}
+    width: 100vw;
+    height: 60px;
+    background-color: #b3e0e2;
+    display: flex;
+    justify-content: space-between
+};
+// ヘッダーleft
+.hamburger{
+    display: flex;
+    margin: 15px 20px;
+    .nav-toggle{
+        margin-right: 20px;
+    };
+};
+// ヘッダーright
+.header-right{
+    display: flex;
+    margin: 15px 40px;
+    .translate-link{
+        margin-left: 20px;
+    };
+};
+// ハンバーガーbtn（クリック前）
+.nav-toggle{
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+};
+.nav-toggle span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+    &:nth-child(1){
+        top: 0;
+    };
+    &:nth-child(2){
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    };
+    &:nth-child(3){
+        bottom: 0;
+    };
+};
+// ハンバーガーbtn（クリック後）
+.nav-toggle.show{
+    span:nth-child(1){
+        transform: translateY(10px) rotate(-45deg);
+    };
+    span:nth-child(2){
+        opacity: 0;
+    };
+    span:nth-child(3){
+        transform: translateY(-12px) rotate(45deg);
+    };
+};
+// ハンバーガーメニューリスト（btnクリック前）
+.nav{
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    // (btnクリック後)
+    .show{
+        opacity: 1;
+        visibility: visible;
+    };
+};
