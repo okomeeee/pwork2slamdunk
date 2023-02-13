@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
 };
-
+body{
+    font-family: serif;
+}
 #header{
     width: 100vw;
     height: 60px;
@@ -81,3 +83,118 @@
         visibility: visible;
     };
 };
+
+// #MOVIE
+.movie{
+    .section-title{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+        letter-spacing: 0.12em;
+    };
+};
+
+// #OFFICIAL SNS
+.sns{
+    &-title{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        font-size: 20px;
+    };
+    &-list{
+        text-align: center;
+        display: flex;
+        list-style: none;
+    };
+};
+.list-item{
+    img{
+        border-radius: 50%;
+    };
+};
+.hashtag{
+    p{
+        text-align: center;
+        letter-spacing: 0.12em;
+        color: #A72B1B;
+        margin-top: 10px;
+    };
+};
+// basketball(TOPへ戻る)
+.ball{
+    .pagetop{
+        display: block;
+    };
+    .pagetop-btn{
+        position: absolute;
+        bottom: 200px;
+    };
+    .btn-img{
+    }
+}
+@keyframes ballBound {
+    0% {
+      top: 0;
+      -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+    12.5% {
+      top: 42px;
+      -webkit-transform: scale(1.04, 0.96) rotateZ(45deg);
+        transform: scale(1.04, 0.96) rotateZ(45deg);
+    }
+    25% {
+      top: 0;
+    }
+    37.5% {
+      top: 42px;
+      -webkit-transform: scale(1.04, 0.96) rotateZ(135deg);
+        transform: scale(1.04, 0.96) rotateZ(135deg);
+    }
+    50% {
+      top: 0;
+    }
+    62.5% {
+      top: 42px;
+      -webkit-transform: scale(1.04, 0.96) rotateZ(225deg);
+     transform: scale(1.04, 0.96) rotateZ(225deg);
+    }
+    75% {
+      top: 0;
+    }
+    87.5% {
+      top: 42px;
+      -webkit-transform: scale(1.04, 0.96) rotateZ(315deg);
+      transform: scale(1.04, 0.96) rotateZ(315deg);
+    }
+    100% {
+      top: 0;
+      -webkit-transform: rotateZ(360deg);
+      transform: rotateZ(360deg);
+    };
+  };
+//   フッター
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 20px 50px 20px;
+    &-left{
+        a{
+            color: #A72B1B;
+        };  
+    };
+    &-right{
+        span{
+            font-size: 10px;
+            letter-spacing: 0.1rem;   
+        };
+        #first{
+            display: block;
+            text-align: right;
+        };
+    };
+};
+
+

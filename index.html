@@ -8,50 +8,144 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- ヘッダー -->
-    <header>
-        <!-- ヘッダーleftハンバーガー -->
+    <header id="header">
+        <!-- ヘッダー左 -->
         <div class="header-left">
-            <div class="Mc"></div>
+            <div class="hamburger">
+                <!-- ハンバーガーbtn -->
+                <span class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <!-- ハンバーガーメニューリスト -->
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="/"><img src="../assets/img/slamdunk_logo.png" alt="logo"></a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">ABOUT THE MOVIE</a></li>
+                        <li><a href="#">TICKET</a></li>
+                        <li><a href="#">THEATER</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">GOODS</a></li>
+                        <li><a href="#">SLAM DUNK POST</a></li>
+                        <li><a href="#">COURT SIDE</a></li>
+                        <li><a href="#">COMICS</a></li>
+                    </ul>
+                </nav>
+                <span class="hamburger-text">MENU</span>
+            </div>
         </div>
         <!-- ヘッダーright -->
         <div class="header-right">
-            <div class="share-link"></div>
-            <div class="translte"></div>
+            <div class="share-link">
+                <span id="share">#SHARE</span>
+            </div>
+            <div class="translate-link">
+                <img src="../assets/img/language-icon/1x/baseline_language_black_24dp.png" alt="言語変換" id="language-icon">
+            </div>
         </div>
     </header>
     <!-- メイン -->
     <main>
         <!-- kv -->
         <div class="kv">
-            <img src="" alt="">
+            <img src="../assets/img/kv.jpg" alt="kv">
         </div>
         <!-- #NEWS -->
-        <div class="news">
-            <!-- ３contentsのみ -->
+        <div class="m-list-news">
+            <ul class="news-list">
+                <li class="list-item" data-news-up="2023/01/28">
+                    <a class="item-inner" href="https://slamdunk-movie.jp/news/2023012801.html">
+                        <p class="item-img">
+                            <span class="img-inner">
+                                <img src="../assets/img/news1.jpg" alt="">
+                            </span>
+                        </p>
+                        <p class="item-ttl">THANKSプレゼントについて（2/1より）</p>
+                        <p class="item-date">2023.01.28</p>
+                    </a>
+                </li>
+                <li class="list-item" data-news-up="2023/01/20">
+                    <a class="item-inner" href="/news/2023012001.html">
+                        <p class="item-img">
+                            <span class="img-inner"><img src="../assets/img/news1.jpg"
+                                    alt=""></span>
+                                </p>
+                        <p class="item-ttl">『THE FIRST SLAM DUNK』劇場オリジナルグッズ第2弾の予約販売について</p>
+                        <p class="item-date">2023.01.20</p>
+                    </a>
+                </li>
+                <li class="list-item" data-news-up="2023/01/17">
+                    <a class="item-inner" href="/news/2023011701.html">
+                        <p class="item-img">
+                            <span class="img-inner">
+                                <img src="../assets/img/news2.jpg"alt="">
+                            </span>
+                        </p>
+                        <p class="item-ttl">『THE FIRST SLAM DUNK』 POP UP STORE　札幌PARCO店・名古屋PARCO店・サンエー浦添西海岸PARCO
+                            CITY店オープン決定！</p>
+                        <p class="item-date">2023.01.17</p>
+                    </a>
         </div>
         <!-- #MOVIE -->
         <div class="movie">
+            <h1 class="section-title">#MOVIE</h1>
             <!-- スライダー動画3つのみ -->
         </div>
         <!-- #OFFICIAL SNS -->
         <div class="sns">
+            <h2 class="sns-title">#OFFICIAL SNS</h2>
             <!-- twitterとinstaとFBのリンクなど -->
+            <ul class="sns-list">
+                <li class="list-item">
+                    <a href="https://twitter.com/intent/follow?screen_name=movie_slamdunk">
+                        <img src="../assets/img/twitter_logo.png" alt="twitter_logo">
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="https://www.instagram.com/slamdunk_movie/">
+                        <img src="../assets/img/instagram_logo.png" alt="instagram_logo">
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="https://www.facebook.com/movie.slamdunk/">
+                        <img src="../assets/img/facebook_logo.png" alt="facebook_logo">
+                    </a>
+                </li>
+            </ul>
+            <div class="hashtag">
+                <p>#SLAMDUNK #スラムダンク #SLAMDUNKMOVIE</p>
+            </div>            
         </div>
 
         <!-- basketballトップへ戻る -->
         <div class="ball">
-            <span></span>
+            <p class="pagetop">
+                <a href="#top" class="pagetop-btn">
+                    <span class="btn-ttl">
+                        <img src="../assets/img/top_text.png" alt="topへ">
+                    </span>
+                    <span class="btn-img">
+                        <img src="../assets/img/top_basketball.png" alt="ball">
+                    </span>
+                </a>
+            </p>            
         </div>
     </main>
     <!-- フッター -->
-    <footer>
+    <footer class="footer">
         <!-- フッターleft -->
         <div class="footer-left">
             <!-- プライバシーポリシーのリンク -->
+            <a href="">GDPR Privacy Policy</a>
         </div>
         <!-- フッターright -->
-        <div class="footer-right"></div>
+        <div class="footer-right">
+            <span id="first"><small>&copy;</small> I.T.PLANNING,INC.</span>
+            <!-- <br> -->
+            <span><small>&copy;</small> 2022 THE FIRST SLAM DUNK Film Partners</span>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
