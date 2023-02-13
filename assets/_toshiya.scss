@@ -1,3 +1,11 @@
+.m-list-news{
+    // background-color: #b3e0e2;
+    .section-title{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
 .u-txt-ttl2{
     font-size: 50px;
     text-align: center;
@@ -18,6 +26,7 @@
 
 .news-list{
     display: flex;
+    list-style: none;
 }
 
 .kv{

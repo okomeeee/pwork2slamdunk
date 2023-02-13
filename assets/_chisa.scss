@@ -87,6 +87,7 @@ body{
 // #MOVIE
 .movie{
     .section-title{
+        
         margin-top: 100px;
         margin-bottom: 50px;
         text-align: center;
@@ -128,11 +129,9 @@ body{
         display: block;
     };
     .pagetop-btn{
-        position: absolute;
+        // position: absolute;
         bottom: 200px;
     };
-    .btn-img{
-    }
 }
 @keyframes ballBound {
     0% {
